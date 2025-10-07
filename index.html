@@ -4,9 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic-Tac-Toe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="title">
+      <h2>Tic-Tac-Toe</h2>
+    </div>
+    <dialog id="dialog">
+      <form method="dialog" id="nameForm">
+        <h2>Enter players name</h2>
+
+        <div class="user-input">
+          <label for="player-one">Player one</label>
+          <input type="text" name="name" id="player-one" required />
+        </div>
+
+        <div class="user-input">
+          <label for="player-two">Player two</label>
+          <input type="text" name="name" id="player-two" required />
+        </div>
+
+        <div class="button">
+          <button id="submitBtn">Confirm</button>
+        </div>
+      </form>
+    </dialog>
+
+    <div class="container">
+      <div class="game-container">
+        <div class="buttons-container"></div>
+      </div>
+      <div class="display-turn"></div>
+      <div class="buttons-re">
+        <button class="reset-btn">Reset</button>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
